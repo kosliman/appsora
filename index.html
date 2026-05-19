@@ -3,6 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appsora | IT Consultancy & Enterprise Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #020617; color: #f8fafc; }
+        .glass-card { background: rgba(30, 41, 59, 0.5); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .gradient-text { background: linear-gradient(90deg, #60a5fa, #2dd4bf); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <nav class="fixed w-full z-50 bg-[#020617]/80 backdrop-blur-md border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <div class="text-2xl font-extrabold tracking-tighter text-white">APPS<span class="text-blue-500">ORA</span></div>
+            <div class="hidden md:flex space-x-10 text-sm font-medium uppercase tracking-widest text-gray-400">
+                <a href="#about" class="hover:text-blue-400 transition">About</a>
+                <a href="#services" class="hover:text-blue-400 transition">Services</a>
+                <a href="#process" class="hover:text-blue-400 transition">Process</a>
+                <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+            </div>
+            <a href="tel:+1234567890" class="hidden md:block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-full text-sm font-bold transition">
+                Call Expert
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="pt-48 pb-32 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col items-center text-center">
+            <span class="px-4 py-1.5 rounded-full border border-blue-500/30 text-blue-400 text-xs font-bold uppercase tracking-widest mb-6">Expert IT Consultancy</span>
+            <h1 class="text-5xl md:text-8xl font-black mb-8 leading-[1.1]">
+                Leading the <span class="gradient-text">Next Generation</span> of Digital Business.
+            </h1>
+            <p class="text-lg md:text-xl text-gray-400 max-w-3xl mb-12 leading-relaxed">
+                Appsora empowers enterprises by delivering cutting-edge IT strategy, cloud architecture, and cybersecurity solutions that drive measurable growth.
+            </p>
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="#contact" class="bg-white text-black px-10 py-5 rounded-2xl font-bold text-lg hover:bg-blue-500 hover:text-white transition-all duration-300">Book a Free Audit</a>
+                <a href="#services" class="glass-card px-10 py-5 rounded-2xl font-bold text-lg hover:bg-white/5 transition">Our Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 px-6 border-t border-white/5">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+            <div>
+                <h2 class="text-4xl font-bold mb-6 italic">Why Appsora?</h2>
+                <p class="text-gray-400 text-lg leading-relaxed mb-6">
+                    In an era of rapid technological change, Appsora acts as your strategic partner. We don't just recommend technology; we engineer success. Our team brings decades of combined experience in Information Technology Consultancy.
+                </p>
+                <div class="grid grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="text-blue-400 text-3xl font-bold mb-1">99%</h4>
+                        <p class="text-gray-500 text-sm uppercase">Client Satisfaction</p>
+                    </div>
+                    <div>
+                        <h4 class="text-blue-400 text-3xl font-bold mb-1">24/7</h4>
+                        <p class="text-gray-500 text-sm uppercase">System Monitoring</p>
+                    </div>
+                </div>
+            </div>
+            <div class="glass-card p-10 rounded-3xl">
+                <h3 class="text-2xl font-bold mb-4">Our Philosophy</h3>
+                <p class="text-gray-400">"Technology should be an accelerator, not a barrier. At Appsora, we simplify the complex so you can focus on your core business."</p>
+                <div class="mt-8 flex items-center space-x-4">
+                    <div class="w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center font-bold">AS</div>
+                    <div>
+                        <p class="font-bold">Consultancy Board</p>
+                        <p class="text-sm text-gray-500">Appsora Leadership</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Services -->
+    <section id="services" class="py-24 px-6 bg-[#0a0f1d]">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl font-bold mb-4">Strategic Solutions</h2>
+                <p class="text-gray-500">Comprehensive IT services for modern enterprises.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Service 1 -->
+                <div class="glass-card p-8 rounded-3xl group hover:border-blue-500/50 transition">
+                    <i data-lucide="cloud" class="w-10 h-10 text-blue-500 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">Cloud Migration</h3>
+                    <p class="text-gray-500 text-sm">Seamless transition to AWS, Azure, or Google Cloud with zero downtime.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="glass-card p-8 rounded-3xl group hover:border-blue-500/50 transition">
+                    <i data-lucide="shield-check" class="w-10 h-10 text-blue-500 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">Cyber Defense</h3>
+                    <p class="text-gray-500 text-sm">Advanced threat protection, penetration testing, and security audits.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="glass-card p-8 rounded-3xl group hover:border-blue-500/50 transition">
+                    <i data-lucide="code" class="w-10 h-10 text-blue-500 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">Custom Software</h3>
+                    <p class="text-gray-500 text-sm">Bespoke enterprise software built with scalable modern architectures.</p>
+                </div>
+                <!-- Service 4 -->
+                <div class="glass-card p-8 rounded-3xl group hover:border-blue-500/50 transition">
+                    <i data-lucide="cpu" class="w-10 h-10 text-blue-500 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">AI & Automation</h3>
+                    <p class="text-gray-500 text-sm">Integrating AI workflows to automate repetitive tasks and save costs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 px-6 border-t border-white/5">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
+                <div>
+                    <h2 class="text-5xl font-bold mb-8">Let's build something <span class="text-blue-500">exceptional.</span></h2>
+                    <p class="text-gray-400 text-lg mb-12">Connect with our consultants to discuss your project requirements and get a technical proposal.</p>
+                    
+                    <div class="space-y-8">
+                        <div class="flex items-center space-x-6">
+                            <div class="w-14 h-14 rounded-2xl glass-card flex items-center justify-center text-blue-500">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500 uppercase tracking-widest font-bold">Email Us</p>
+                                <p class="text-xl font-medium">info@appsora.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-6">
+                            <div class="w-14 h-14 rounded-2xl glass-card flex items-center justify-center text-blue-500">
+                                <i data-lucide="phone"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500 uppercase tracking-widest font-bold">Call Us</p>
+                                <p class="text-xl font-medium">+1 (234) 567-890</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="glass-card p-10 rounded-3xl space-y-6">
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <label class="text-sm font-medium text-gray-400">Name</label>
+                            <input type="text" placeholder="John Doe" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 outline-none focus:border-blue-500 transition">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-sm font-medium text-gray-400">Email</label>
+                            <input type="email" placeholder="john@company.com" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 outline-none focus:border-blue-500 transition">
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-sm font-medium text-gray-400">Subject</label>
+                        <select class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 outline-none focus:border-blue-500 transition">
+                            <option>General Inquiry</option>
+                            <option>Cloud Consultancy</option>
+                            <option>Security Audit</option>
+                        </select>
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-sm font-medium text-gray-400">Message</label>
+                        <textarea rows="4" placeholder="How can we help?" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 outline-none focus:border-blue-500 transition"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 py-4 rounded-xl font-bold transition">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-white/5 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:row justify-between items-center text-gray-500 text-sm">
+            <div class="mb-4 md:mb-0">© 2026 Appsora Information Technology Consultancy.</div>
+            <div class="flex space-x-8">
+                <a href="#" class="hover:text-white transition">LinkedIn</a>
+                <a href="#" class="hover:text-white transition">Twitter</a>
+                <a href="#" class="hover:text-white transition">Terms</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Appsora | IT Consultancy & Digital Transformation</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
