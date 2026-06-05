@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stylish Suits Supply | Premium Men's Attire & Tailoring</title>
-    <!-- Tailwind CSS for Modern Styling -->
+    <title>Stylish Suits Supply | Premium Men's Attire & Specialized Retail</title>
+    
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
-    <!-- Google Fonts: Playfair for Luxury titles, Inter for clean body text -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     
     <style>
         :root {
             --gold: #c5a059;
             --charcoal: #0a0a0a;
         }
-        h1, h2, h3, .font-serif { font-family: 'Playfair Display', serif; }
+        h1, h2, h3, .serif { font-family: 'Playfair Display', serif; }
         body { font-family: 'Inter', sans-serif; background-color: var(--charcoal); color: #e5e5e5; }
         .gold-text { color: var(--gold); }
         .gold-bg { background-color: var(--gold); }
@@ -32,19 +33,19 @@
 </head>
 <body class="antialiased">
 
-    <!-- Header / Navigation -->
+    <!-- Navigation -->
     <nav class="fixed w-full z-50 nav-blur border-b border-white/5 py-4 px-6">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
             <div class="flex flex-col">
                 <span class="text-xl md:text-2xl font-bold tracking-[0.3em] uppercase text-white leading-none">Stylish Suits</span>
-                <span class="text-[0.6rem] tracking-[0.6em] uppercase gold-text font-bold mt-1">Supply</span>
+                <span class="text-[0.6rem] tracking-[0.6em] gold-text font-bold mt-1 uppercase">Supply</span>
             </div>
             
             <div class="hidden lg:flex space-x-12 text-[10px] uppercase tracking-[0.2em] font-bold">
                 <a href="#home" class="hover:text-[#c5a059] transition-soft">Home</a>
                 <a href="#collections" class="hover:text-[#c5a059] transition-soft">Collections</a>
                 <a href="#about" class="hover:text-[#c5a059] transition-soft">The Craft</a>
-                <a href="#contact" class="hover:text-[#c5a059] transition-soft">Contact</a>
+                <a href="#contact" class="hover:text-[#c5a059] transition-soft">Store Info</a>
             </div>
 
             <div class="flex items-center space-x-6">
@@ -52,7 +53,7 @@
                     <i data-lucide="phone" class="w-4 h-4 mr-2"></i>
                     +44 7460 339850
                 </a>
-                <a href="#contact" class="gold-bg text-black px-5 py-2 text-[10px] font-black uppercase tracking-widest hover:bg-white transition-soft">
+                <a href="#contact" class="gold-bg text-black px-6 py-2.5 text-[10px] font-black uppercase tracking-widest hover:bg-white transition-soft shadow-lg">
                     Book Fitting
                 </a>
             </div>
@@ -61,200 +62,225 @@
 
     <!-- Hero Section -->
     <section id="home" class="relative h-screen flex items-center justify-center overflow-hidden">
-        <!-- Background Image -->
         <div class="absolute inset-0">
-            <img src="https://images.unsplash.com/photo-1593032465175-481ac7f401a0?auto=format&fit=crop&q=80" class="w-full h-full object-cover opacity-40" alt="Suit Detail">
-            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/60 to-black"></div>
+            <img src="https://images.unsplash.com/photo-1593032465175-481ac7f401a0?auto=format&fit=crop&q=80" class="w-full h-full object-cover opacity-30" alt="Suit Detail">
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/40 to-black"></div>
         </div>
         
         <div class="relative z-10 text-center px-6 max-w-5xl">
-            <span class="gold-text uppercase tracking-[0.5em] text-xs font-bold mb-8 block animate-pulse">Established 2026</span>
+            <span class="gold-text uppercase tracking-[0.5em] text-xs font-bold mb-8 block">Exclusive Retailer</span>
             <h1 class="text-5xl md:text-8xl font-bold text-white mb-8 leading-[1.1]">
-                Mastering the <br><span class="italic font-normal serif">Perfect Fit.</span>
+                Precision in Every <br><span class="italic font-normal serif">Stitch.</span>
             </h1>
             <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-12 font-light leading-relaxed">
-                Experience the pinnacle of British tailoring. From executive boardrooms to grand weddings, we provide the armor for the modern gentleman.
+                Premium tailoring meets specialized retail. Discover a curated collection of suits designed for the boardroom, the gala, and the modern lifestyle.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-6">
-                <a href="#collections" class="gold-bg text-black px-12 py-5 font-bold uppercase tracking-[0.2em] text-xs hover:bg-white transition-soft shadow-2xl">Explore Collections</a>
-                <a href="#contact" class="border border-white/20 px-12 py-5 font-bold uppercase tracking-[0.2em] text-xs hover:bg-white hover:text-black transition-soft">Visit Boutique</a>
+                <a href="#collections" class="gold-bg text-black px-12 py-5 font-bold uppercase tracking-[0.2em] text-xs hover:bg-white transition-soft">Browse Catalog</a>
+                <a href="#contact" class="border border-white/20 px-12 py-5 font-bold uppercase tracking-[0.2em] text-xs hover:bg-white hover:text-black transition-soft">Contact Boutique</a>
             </div>
         </div>
     </section>
 
-    <!-- Brand Philosophy -->
+    <!-- Philosophy / About -->
     <section id="about" class="py-32 px-6 bg-[#050505]">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
             <div class="relative">
-                <img src="https://images.unsplash.com/photo-1594932224828-b4b059b6fe58?auto=format&fit=crop&q=80" class="w-full h-[600px] object-cover gold-border border-l-8 border-t-8 p-4" alt="Tailoring">
-                <div class="absolute -bottom-10 -right-10 hidden lg:block bg-[#c5a059] p-10 text-black">
-                    <p class="text-4xl font-bold italic">100%</p>
-                    <p class="text-xs uppercase font-black tracking-widest">Italian Wool</p>
+                <img src="https://images.unsplash.com/photo-1594932224828-b4b059b6fe58?auto=format&fit=crop&q=80" class="w-full h-[600px] object-cover border-l border-t gold-border p-4" alt="Craftsmanship">
+                <div class="absolute -bottom-6 -right-6 hidden lg:block bg-[#c5a059] p-8 text-black">
+                    <p class="text-3xl font-bold italic serif">Quality First</p>
+                    <p class="text-[10px] uppercase font-black tracking-widest mt-1">Specialized Retail Standards</p>
                 </div>
             </div>
             <div>
-                <h2 class="text-4xl md:text-6xl font-bold text-white mb-10 leading-tight">Superior Retail <br>Experience.</h2>
+                <h2 class="text-4xl md:text-6xl font-bold text-white mb-10 leading-tight serif">The Specialized <br>Experience.</h2>
                 <p class="text-gray-400 text-lg mb-8 leading-relaxed font-light">
-                    At <span class="text-white font-bold">Stylish Suits Supply</span>, we specialize in more than just clothing. We provide a specialized retail experience where fabric meets personality. Our collection is curated for those who demand excellence in every stitch.
+                    At <span class="text-white font-bold tracking-wider">STYLISH SUITS SUPPLY</span>, we believe a suit is more than just clothing—it's a statement of character. Our store provides a unique shopping journey where expert consultancy ensures you find the perfect silhouette for your physique.
                 </p>
-                <div class="space-y-6">
-                    <div class="flex items-center space-x-4">
-                        <div class="w-10 h-10 rounded-full border gold-border flex items-center justify-center gold-text">
-                            <i data-lucide="check" class="w-5 h-5"></i>
-                        </div>
-                        <span class="uppercase tracking-widest text-xs font-bold">Hand-Finished Details</span>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                    <div class="space-y-4">
+                        <i data-lucide="scissors" class="gold-text w-6 h-6"></i>
+                        <h4 class="text-white font-bold uppercase text-xs tracking-widest">Bespoke Fittings</h4>
+                        <p class="text-gray-500 text-sm">Every garment is checked against 15 key measurement points.</p>
                     </div>
-                    <div class="flex items-center space-x-4">
-                        <div class="w-10 h-10 rounded-full border gold-border flex items-center justify-center gold-text">
-                            <i data-lucide="check" class="w-5 h-5"></i>
-                        </div>
-                        <span class="uppercase tracking-widest text-xs font-bold">Expert Sizing Consultancy</span>
-                    </div>
-                    <div class="flex items-center space-x-4">
-                        <div class="w-10 h-10 rounded-full border gold-border flex items-center justify-center gold-text">
-                            <i data-lucide="check" class="w-5 h-5"></i>
-                        </div>
-                        <span class="uppercase tracking-widest text-xs font-bold">Exclusive Fabric Selection</span>
+                    <div class="space-y-4">
+                        <i data-lucide="award" class="gold-text w-6 h-6"></i>
+                        <h4 class="text-white font-bold uppercase text-xs tracking-widest">Premium Fabrics</h4>
+                        <p class="text-gray-500 text-sm">Imported Italian and British wool of the highest S-grade.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Collections Grid -->
+    <!-- Collections -->
     <section id="collections" class="py-32 px-6 bg-white text-black">
         <div class="max-w-7xl mx-auto">
-            <div class="flex flex-col md:row justify-between items-end mb-20 gap-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
                 <div>
-                    <h2 class="text-5xl md:text-7xl font-bold mb-4">The Collection</h2>
-                    <div class="w-24 h-2 gold-bg"></div>
+                    <h2 class="text-5xl md:text-7xl font-bold serif">The Collection</h2>
+                    <div class="w-32 h-1.5 gold-bg mt-6"></div>
                 </div>
-                <p class="max-w-md text-gray-500 uppercase tracking-widest text-xs font-bold">
-                    Browse our specialized retail categories designed for every occasion.
+                <p class="max-w-md text-gray-500 uppercase tracking-[0.2em] text-[10px] font-bold leading-loose">
+                    Explore our retail categories designed for specialized occasions and daily excellence.
                 </p>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Wedding -->
-                <div class="group cursor-pointer">
-                    <div class="overflow-hidden relative h-[500px]">
-                        <img src="https://images.unsplash.com/photo-1555069519-03efed89c5ce?auto=format&fit=crop&q=80" class="w-full h-full object-cover transition-soft group-hover:scale-110">
-                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-soft"></div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <!-- Card 1 -->
+                <div class="group">
+                    <div class="overflow-hidden relative aspect-[3/4]">
+                        <img src="https://images.unsplash.com/photo-1555069519-03efed89c5ce?auto=format&fit=crop&q=80" class="w-full h-full object-cover transition-soft group-hover:scale-105">
+                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-soft"></div>
                     </div>
-                    <h3 class="text-2xl font-bold mt-6">The Wedding Series</h3>
-                    <p class="text-gray-500 text-sm mt-2 uppercase tracking-widest italic">Timeless Elegance for your big day</p>
+                    <h3 class="text-2xl font-bold mt-8 serif">The Wedding Series</h3>
+                    <p class="text-gray-500 text-xs mt-3 uppercase tracking-widest font-semibold italic">Refined Elegance</p>
                 </div>
-                <!-- Business -->
-                <div class="group cursor-pointer">
-                    <div class="overflow-hidden relative h-[500px]">
-                        <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80" class="w-full h-full object-cover transition-soft group-hover:scale-110">
-                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-soft"></div>
+                <!-- Card 2 -->
+                <div class="group">
+                    <div class="overflow-hidden relative aspect-[3/4]">
+                        <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80" class="w-full h-full object-cover transition-soft group-hover:scale-105">
+                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-soft"></div>
                     </div>
-                    <h3 class="text-2xl font-bold mt-6">Executive Business</h3>
-                    <p class="text-gray-500 text-sm mt-2 uppercase tracking-widest italic">Command respect in every room</p>
+                    <h3 class="text-2xl font-bold mt-8 serif">Executive Business</h3>
+                    <p class="text-gray-500 text-xs mt-3 uppercase tracking-widest font-semibold italic">Power Dressing</p>
                 </div>
-                <!-- Casual -->
-                <div class="group cursor-pointer">
-                    <div class="overflow-hidden relative h-[500px]">
-                        <img src="https://images.unsplash.com/photo-1593030103066-0093718efeb9?auto=format&fit=crop&q=80" class="w-full h-full object-cover transition-soft group-hover:scale-110">
-                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-soft"></div>
+                <!-- Card 3 -->
+                <div class="group">
+                    <div class="overflow-hidden relative aspect-[3/4]">
+                        <img src="https://images.unsplash.com/photo-1593030103066-0093718efeb9?auto=format&fit=crop&q=80" class="w-full h-full object-cover transition-soft group-hover:scale-105">
+                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-soft"></div>
                     </div>
-                    <h3 class="text-2xl font-bold mt-6">Signature Casual</h3>
-                    <p class="text-gray-500 text-sm mt-2 uppercase tracking-widest italic">Sophistication without the formality</p>
+                    <h3 class="text-2xl font-bold mt-8 serif">Signature Casual</h3>
+                    <p class="text-gray-500 text-xs mt-3 uppercase tracking-widest font-semibold italic">Modern Versatility</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact & Store Info -->
-    <section id="contact" class="py-32 px-6 bg-black">
-        <div class="max-w-7xl mx-auto">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-32">
-                <div>
-                    <h2 class="text-5xl font-bold mb-10 text-white">Visit our <br><span class="gold-text">Specialized Store.</span></h2>
-                    <p class="text-gray-400 text-lg mb-16 font-light">Contact us for availability, private fitting sessions, or bespoke tailoring inquiries.</p>
-                    
-                    <div class="space-y-12">
-                        <div class="flex items-center space-x-8 group">
-                            <div class="w-16 h-16 border border-white/10 flex items-center justify-center gold-text group-hover:bg-[#c5a059] group-hover:text-black transition-soft">
-                                <i data-lucide="mail" class="w-6 h-6"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-[10px] uppercase tracking-[0.3em] font-black text-gray-500 mb-2">Email Address</h4>
-                                <p class="text-xl font-medium text-white break-all">EdithDmitry43@STYLISHSUITSUPPLY.ONLINE</p>
-                            </div>
+    <!-- Contact & Address Section -->
+    <section id="contact" class="py-32 px-6 bg-[#0a0a0a]">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24">
+            <div>
+                <h2 class="text-5xl md:text-6xl font-bold mb-10 text-white serif">Connect with our <br><span class="gold-text italic font-normal">Boutique.</span></h2>
+                <p class="text-gray-400 text-lg mb-16 font-light">Whether you need a bespoke measurement or are looking for the perfect ready-to-wear suit, our consultants are ready to assist you.</p>
+                
+                <div class="space-y-10">
+                    <!-- Address -->
+                    <div class="flex items-start space-x-8 group">
+                        <div class="w-14 h-14 border border-white/10 flex items-center justify-center gold-text group-hover:bg-[#c5a059] group-hover:text-black transition-soft">
+                            <i data-lucide="map-pin" class="w-6 h-6"></i>
                         </div>
-                        <div class="flex items-center space-x-8 group">
-                            <div class="w-16 h-16 border border-white/10 flex items-center justify-center gold-text group-hover:bg-[#c5a059] group-hover:text-black transition-soft">
-                                <i data-lucide="phone" class="w-6 h-6"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-[10px] uppercase tracking-[0.3em] font-black text-gray-500 mb-2">Direct Line</h4>
-                                <p class="text-xl font-medium text-white">+44 7460 339850</p>
-                            </div>
+                        <div>
+                            <h4 class="text-[10px] uppercase tracking-[0.3em] font-black text-gray-500 mb-2">Billing & Store Address</h4>
+                            <p class="text-lg font-medium text-white">12 Gordon Avenue, South Croydon, <br>England, CR2 0QN</p>
+                        </div>
+                    </div>
+                    <!-- Email -->
+                    <div class="flex items-start space-x-8 group">
+                        <div class="w-14 h-14 border border-white/10 flex items-center justify-center gold-text group-hover:bg-[#c5a059] group-hover:text-black transition-soft">
+                            <i data-lucide="mail" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-[10px] uppercase tracking-[0.3em] font-black text-gray-500 mb-2">Official Email</h4>
+                            <p class="text-lg font-medium text-white break-all">EdithDmitry43@STYLISHSUITSUPPLY.ONLINE</p>
+                        </div>
+                    </div>
+                    <!-- Phone -->
+                    <div class="flex items-start space-x-8 group">
+                        <div class="w-14 h-14 border border-white/10 flex items-center justify-center gold-text group-hover:bg-[#c5a059] group-hover:text-black transition-soft">
+                            <i data-lucide="phone" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-[10px] uppercase tracking-[0.3em] font-black text-gray-500 mb-2">Customer Line</h4>
+                            <p class="text-lg font-medium text-white">+44 7460 339850</p>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="bg-white/5 p-12 border border-white/10 relative overflow-hidden">
-                    <h3 class="text-3xl font-bold mb-8 text-white">In-Store Appointment</h3>
-                    <form class="space-y-8 relative z-10">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                            <div class="space-y-2">
-                                <label class="text-[10px] uppercase tracking-widest text-gray-500 font-bold">Full Name</label>
-                                <input type="text" class="w-full bg-transparent border-b border-white/20 py-3 outline-none focus:border-[#c5a059] transition-soft">
-                            </div>
-                            <div class="space-y-2">
-                                <label class="text-[10px] uppercase tracking-widest text-gray-500 font-bold">Suit Category</label>
-                                <select class="w-full bg-transparent border-b border-white/20 py-3 outline-none focus:border-[#c5a059] transition-soft text-gray-400">
-                                    <option class="bg-black">Wedding</option>
-                                    <option class="bg-black">Business</option>
-                                    <option class="bg-black">Casual Luxury</option>
-                                </select>
-                            </div>
+            <!-- Request Form -->
+            <div class="bg-white/5 p-10 md:p-14 border border-white/5 backdrop-blur-sm">
+                <h3 class="text-3xl font-bold mb-10 text-white serif">Book a Private Fitting</h3>
+                <form class="space-y-8">
+                    <div class="space-y-2">
+                        <label class="text-[10px] uppercase tracking-widest text-gray-500 font-bold">Full Name</label>
+                        <input type="text" class="w-full bg-transparent border-b border-white/20 py-3 outline-none focus:border-[#c5a059] transition-soft text-white">
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="space-y-2">
+                            <label class="text-[10px] uppercase tracking-widest text-gray-500 font-bold">Inquiry Type</label>
+                            <select class="w-full bg-transparent border-b border-white/20 py-3 outline-none focus:border-[#c5a059] transition-soft text-gray-400">
+                                <option class="bg-black">Retail Purchase</option>
+                                <option class="bg-black">Wedding Styling</option>
+                                <option class="bg-black">Corporate Fitting</option>
+                            </select>
                         </div>
                         <div class="space-y-2">
-                            <label class="text-[10px] uppercase tracking-widest text-gray-500 font-bold">Message / Requirements</label>
-                            <textarea rows="3" class="w-full bg-transparent border-b border-white/20 py-3 outline-none focus:border-[#c5a059] transition-soft"></textarea>
+                            <label class="text-[10px] uppercase tracking-widest text-gray-500 font-bold">Phone Number</label>
+                            <input type="tel" class="w-full bg-transparent border-b border-white/20 py-3 outline-none focus:border-[#c5a059] transition-soft text-white">
                         </div>
-                        <button class="w-full gold-bg text-black font-black uppercase tracking-[0.3em] py-6 text-xs hover:bg-white transition-soft">
-                            Request Private Fitting
-                        </button>
-                    </form>
-                </div>
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-[10px] uppercase tracking-widest text-gray-500 font-bold">Details</label>
+                        <textarea rows="2" class="w-full bg-transparent border-b border-white/20 py-3 outline-none focus:border-[#c5a059] transition-soft text-white" placeholder="Preferred date or style..."></textarea>
+                    </div>
+                    <button class="w-full gold-bg text-black font-black uppercase tracking-[0.4em] py-6 text-[10px] hover:bg-white transition-soft shadow-2xl">
+                        Send Request
+                    </button>
+                </form>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="py-20 bg-black border-t border-white/5 px-6">
-        <div class="max-w-7xl mx-auto flex flex-col md:row justify-between items-center gap-10">
-            <div class="text-center md:text-left">
-                <div class="text-xl font-bold tracking-[0.2em] uppercase text-white leading-none">Stylish Suits Supply</div>
-                <p class="text-gray-600 text-xs mt-4 tracking-widest italic">Redefining modern retail since 2026.</p>
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-16 items-start mb-20">
+                <div>
+                    <div class="text-xl font-bold tracking-[0.2em] uppercase text-white leading-none">Stylish Suits Supply</div>
+                    <p class="text-gray-600 text-xs mt-6 tracking-widest leading-loose italic">
+                        Specialized clothing retail store providing world-class tailoring and executive collections since 2026.
+                    </p>
+                </div>
+                <div class="flex flex-col space-y-4">
+                    <h4 class="text-[10px] uppercase tracking-widest font-black text-white">Business Information</h4>
+                    <p class="text-gray-500 text-xs leading-relaxed">
+                        12 Gordon Avenue,<br>
+                        South Croydon, England,<br>
+                        CR2 0QN
+                    </p>
+                </div>
+                <div class="flex flex-col space-y-4 md:items-end">
+                    <h4 class="text-[10px] uppercase tracking-widest font-black text-white">Legal & Social</h4>
+                    <div class="flex space-x-8 text-[10px] uppercase tracking-[0.3em] font-bold text-gray-500">
+                        <a href="#" class="hover:text-white transition-soft">Privacy</a>
+                        <a href="#" class="hover:text-white transition-soft">Terms</a>
+                        <a href="#" class="hover:text-[#c5a059] transition-soft italic">Instagram</a>
+                    </div>
+                </div>
             </div>
-            <div class="flex space-x-12 text-[10px] uppercase tracking-[0.3em] font-bold text-gray-500">
-                <a href="#" class="hover:text-white transition-soft">Privacy</a>
-                <a href="#" class="hover:text-white transition-soft">Terms</a>
-                <a href="#" class="hover:text-white transition-soft">Instagram</a>
-            </div>
-            <div class="text-[10px] uppercase tracking-[0.3em] text-gray-700">
-                © 2026 Stylish Suits Supply. Specialized Retail Store.
+            <div class="pt-10 border-t border-white/5 text-center">
+                <div class="text-[9px] uppercase tracking-[0.4em] text-gray-700 font-bold">
+                    © 2026 Stylish Suits Supply. Specialized Retail Boutique. All Rights Reserved.
+                </div>
             </div>
         </div>
     </footer>
 
-    <!-- Initialize Icons -->
     <script>
+        // Initialize Icons
         lucide.createIcons();
         
-        // Header transparency change on scroll
+        // Scroll Effect for Navbar
         window.addEventListener('scroll', () => {
             const nav = document.querySelector('nav');
-            if (window.scrollY > 50) {
-                nav.style.padding = '1rem 1.5rem';
+            if (window.scrollY > 100) {
+                nav.style.padding = '0.8rem 1.5rem';
+                nav.classList.add('shadow-2xl');
             } else {
-                nav.style.padding = '1.5rem 1.5rem';
+                nav.style.padding = '1rem 1.5rem';
+                nav.classList.remove('shadow-2xl');
             }
         });
     </script>
